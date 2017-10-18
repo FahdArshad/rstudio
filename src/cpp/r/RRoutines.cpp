@@ -59,7 +59,7 @@ void registerAll()
       nullMethodDef.fun = NULL ;
       nullMethodDef.numArgs = 0 ;
       nullMethodDef.types = NULL;
-      nullMethodDef.styles = NULL;
+      // nullMethodDef.styles = NULL;
       s_cMethods.push_back(nullMethodDef);
       pCMethods = &s_cMethods[0];
    }
