@@ -136,7 +136,7 @@ list(APPEND BOOST_LIBS
 # UNIX BOOST
 if(UNIX)
    # prefer static link to our custom built version
-   set(RSTUDIO_TOOLS_BOOST /opt/rstudio-tools/boost/boost_1_50_0)
+   set(RSTUDIO_TOOLS_BOOST /home/satmapai/rstudio-tools/boost/boost_1_50_0)
    if(EXISTS ${RSTUDIO_TOOLS_BOOST})
       # find headers
       set(Boost_USE_STATIC_LIBS ON)
