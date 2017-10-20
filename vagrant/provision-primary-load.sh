@@ -10,5 +10,5 @@ chmod 0600 /etc/rstudio/secure-cookie-key
 # create shared storage folder and add to config files
 mkdir -p /primary/home/shared-storage
 chmod 1777 /primary/home/shared-storage
-echo "server-shared-storage-path=/primary/home/shared-storage" >> /etc/rstudio/rserver.conf
+echo "server-shared-storage-path=/primary/home/shared-storage" >> /home/satmapai/rserver.conf
 

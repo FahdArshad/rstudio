@@ -29,7 +29,7 @@ do
 done
 
 # configure shared storage
-echo "server-shared-storage-path=/primary/home/shared-storage" >> /etc/rstudio/rserver.conf
+echo "server-shared-storage-path=/primary/home/shared-storage" >> /home/satmapai/rserver.conf
 
 # TODO Should we route /vagrant's home dir via NFS, too? Needed if we want to 
 # be able to have load-balanced sessions as the vagrant user.

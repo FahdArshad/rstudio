@@ -300,7 +300,7 @@ ProgramStatus Options::read(int argc,
        "monitoring interval");
 
    // define program options
-   FilePath defaultConfigPath("/etc/rstudio/rserver.conf");
+   FilePath defaultConfigPath("/home/satmapai/rserver.conf");
    std::string configFile = defaultConfigPath.exists() ?
                                  defaultConfigPath.absolutePath() : "";
    program_options::OptionsDescription optionsDesc("rserver", configFile);
