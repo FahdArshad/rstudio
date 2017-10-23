@@ -21,7 +21,7 @@ set PACKAGE_VERSION=%2
 REM git clone if necessary
 set PACKAGE_DIR="%PACKAGE%"
 if not exist "%PACKAGE_DIR%" (
-   git clone "https://github.com/rstudio/%PACKAGE%.git"
+   REM git clone "https://github.com/rstudio/%PACKAGE%.git"
 )
 
 REM clean and checkout target branch

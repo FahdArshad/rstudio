@@ -43,7 +43,7 @@ then
 else
    PANDOC_NAME=pandoc-${PANDOC_VERSION}
    PANDOC_ZIP=${PANDOC_NAME}.zip
-   download $PANDOC_ZIP
+   # download $PANDOC_ZIP
    unzip -q $PANDOC_ZIP
    mkdir -p ${PANDOC_DIR}
    if [ "$PLATFORM" == "Darwin" ]

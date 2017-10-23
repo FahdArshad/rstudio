@@ -41,7 +41,7 @@ then
    echo "Dictionaries already installed"
 else
    CORE_DICTIONARIES=core-dictionaries.zip
-   download $CORE_DICTIONARIES
+   # download $CORE_DICTIONARIES
    mkdir -p $DICTIONARIES_DIR
    unzip -qd "$DICTIONARIES_DIR" "$CORE_DICTIONARIES"
    rm $CORE_DICTIONARIES

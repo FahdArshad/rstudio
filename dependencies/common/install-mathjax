@@ -41,7 +41,7 @@ then
    echo "Mathjax already installed"
 else
    MATHJAX=mathjax-23.zip
-   download $MATHJAX
+   # download $MATHJAX
    unzip -q "$MATHJAX"
    rm $MATHJAX
 fi

@@ -56,7 +56,7 @@ then
 else
    CEF_FILE=cef_binary_${CEF_VERSION}_$CEF_PLATFORM
    CEF_ARCHIVE=$CEF_FILE.zip
-   download $CEF_ARCHIVE
+   # download $CEF_ARCHIVE
    unzip -q $CEF_ARCHIVE
    rm -rf __MACOSX
    mkdir -p $CEF_DIR

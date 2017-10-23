@@ -70,7 +70,7 @@ else
    then
      LIBCLANG_SRC_PATH=libclang-${LIBCLANG_VERSION}
      LIBCLANG_ARCHIVE="${LIBCLANG_SRC_PATH}.zip"
-     download $LIBCLANG_ARCHIVE
+     # download $LIBCLANG_ARCHIVE
      unzip -q $LIBCLANG_ARCHIVE
      cp ${LIBCLANG_SRC_PATH}/${LIBCLANG_PLATFORM}/* ${LIBCLANG_DIR} 
      rm -rf ${LIBCLANG_SRC_PATH}
@@ -88,7 +88,7 @@ else
    if [ "$LIBCLANG_PLATFORM" != "NA" ]
    then
      LIBCLANG_HEADERS_ARCHIVE="libclang-${LIBCLANG_HEADERS}.zip"
-     download $LIBCLANG_HEADERS_ARCHIVE
+     # download $LIBCLANG_HEADERS_ARCHIVE
      unzip -q $LIBCLANG_HEADERS_ARCHIVE -d libclang
      rm $LIBCLANG_HEADERS_ARCHIVE
    fi

@@ -34,13 +34,13 @@ BOOST_BUILD_DIR=boost-build
 if ! test -e $BOOST_DIR
 then
    # download boost
-   BOOST_URL=http://sourceforge.net/projects/boost/files/boost/$BOOST_VERSION_NUMBER/$BOOST_TAR/download?use_mirror=autoselect
-   if [ "$PLATFORM" == "Darwin" ]
-   then
-      curl -L $BOOST_URL > $BOOST_TAR
-   else
-      wget -c $BOOST_URL -O $BOOST_TAR
-   fi
+  #  BOOST_URL=http://sourceforge.net/projects/boost/files/boost/$BOOST_VERSION_NUMBER/$BOOST_TAR/download?use_mirror=autoselect
+  #  if [ "$PLATFORM" == "Darwin" ]
+  #  then
+  #     curl -L $BOOST_URL > $BOOST_TAR
+  #  else
+  #     wget -c $BOOST_URL -O $BOOST_TAR
+  #  fi
    
    # remove existing boost installation
    rm -rf $BOOST_DIR

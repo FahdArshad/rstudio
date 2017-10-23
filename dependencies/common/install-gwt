@@ -48,7 +48,7 @@ if [ -d "$LIB_DIR/gin/$GIN_VER" ]
 then
    echo "$GIN_ZIP already installed"
 else
-   download $GIN_ZIP
+   # download $GIN_ZIP
    mkdir -p "$LIB_DIR/gin/$GIN_VER"
    unzip -qd "$LIB_DIR/gin/$GIN_VER" "$GIN_ZIP"
    rm $GIN_ZIP
@@ -62,7 +62,7 @@ if [ -d "$LIB_DIR/gwt/$GWT_SDK_VER" ]
 then
    echo "$GWT_SDK_ZIP already installed"
 else
-   download $GWT_SDK_ZIP
+   # download $GWT_SDK_ZIP
    mkdir -p "$LIB_DIR/gwt"
    unzip -qd "$LIB_DIR" "$GWT_SDK_ZIP"
    mv "$LIB_DIR/$GWT_SDK" "$LIB_DIR/gwt/$GWT_SDK_VER"
@@ -74,7 +74,7 @@ if [ -f "$LIB_DIR/$JUNIT_JAR" ]
 then
     echo "$JUNIT_JAR already installed"
 else
-    download "$JUNIT_JAR"
+    # download "$JUNIT_JAR"
     mv "$JUNIT_JAR" "$LIB_DIR/$JUNIT_JAR"
 fi
 
@@ -86,7 +86,7 @@ if [ -d "$LIB_DIR/selenium/$SELENIUM_VER" ]
 then
     echo "$SELENIUM_JAVA_BINDINGS_ZIP already installed"
 else
-    download "$SELENIUM_JAVA_BINDINGS_ZIP"
+    # download "$SELENIUM_JAVA_BINDINGS_ZIP"
     mkdir -p "$LIB_DIR/selenium"
     unzip -qd "$LIB_DIR" "$SELENIUM_JAVA_BINDINGS_ZIP"
     mv "$LIB_DIR/$SELENIUM_REL" "$LIB_DIR/selenium/$SELENIUM_VER"
@@ -98,7 +98,7 @@ if [ -f "$LIB_DIR/selenium/$SELENIUM_VER/$SELENIUM_SERVER_JAR" ]
 then
     echo "$SELENIUM_SERVER_JAR already installed"
 else
-    download "$SELENIUM_SERVER_JAR"
+    # download "$SELENIUM_SERVER_JAR"
     mv "$SELENIUM_SERVER_JAR" "$LIB_DIR/selenium/$SELENIUM_VER/$SELENIUM_SERVER_JAR"
 fi
 
@@ -110,11 +110,11 @@ then
     echo "ChromeDriver binaries already installed"
 else
     mkdir -p "$CHROMEDRIVER_LIB_DIR"
-    download "chromedriver-mac"
+    # download "chromedriver-mac"
     mv "chromedriver-mac" "$CHROMEDRIVER_LIB_DIR"
-    download "chromedriver-linux"
+    # download "chromedriver-linux"
     mv "chromedriver-linux" "$CHROMEDRIVER_LIB_DIR"
-    download "chromedriver-win.exe"
+    # download "chromedriver-win.exe"
     mv "chromedriver-win.exe" "$CHROMEDRIVER_LIB_DIR"
     chmod u+x $CHROMEDRIVER_LIB_DIR/*
 fi

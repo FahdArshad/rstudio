@@ -26,11 +26,11 @@ PACKAGE=$1
 PACKAGE_DIR=$PACKAGE
 PACKAGE_VERSION=$2
 
-# git clone if necessary
-if [ ! -d "$PACKAGE_DIR" ]
-then
-  git clone https://github.com/rstudio/$PACKAGE.git
-fi
+# # git clone if necessary
+# if [ ! -d "$PACKAGE_DIR" ]
+# then
+#   git clone https://github.com/rstudio/$PACKAGE.git
+# fi
 
 # clean and checkout target branch
 cd $PACKAGE_DIR
